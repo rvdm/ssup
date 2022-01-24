@@ -24,8 +24,7 @@ urlpath = "https://rvdm.net/s"
 
 def get_random_string(length):
     characters = string.ascii_lowercase + string. ascii_uppercase + string.digits
-    result_str = ''.join(random.choice(characters) for i in range(length))
-    return result_str
+    return ''.join(random.choice(characters) for i in range(length))
 
 def copy_file_to_server(source, target):
     try:
