@@ -20,3 +20,7 @@ urlpath = "https://rvdm.net/s"
 ```
 
 The script assumes you have working keys and/or ssh-agent set up.
+
+I've set the workflow in automator up like this:
+
+![alt text](https://github.com/rvdm/ssup/raw/master/workflow.png "Workflow screenshot")
