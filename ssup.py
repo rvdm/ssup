@@ -31,7 +31,7 @@ def copy_file_to_server(source, target):
         subprocess.run(["scp", source, target])
     except subprocess.CalledProcessError as e:
         print("Something went wrong: %s" % e.output)
-        sys.exit()
+        sys.exit(1)
 
 if (len(sys.argv) == 1):
     print("Please run this from Automator with one filename to copy as an argument.")
