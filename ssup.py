@@ -36,7 +36,7 @@ def copy_file_to_server(source, target):
 if len(sys.argv) != 2:
     print("Please run this from Automator with one filename to copy as an argument.")
     sys.exit(1)
-elif (sys.argv[1]):
+else:
     newfile = get_random_string(filename_length) + filetype
     target = hostname + ":" + os.path.join(path,newfile)
     copy_file_to_server(sys.argv[1],target)
