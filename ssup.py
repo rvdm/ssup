@@ -16,7 +16,7 @@ filetype = ".png"
 hostname = "rvdm.net"
 
 # path on the host to scp to
-path = "screenshots/s/"
+path = "screenshots/s"
 
 # base URL to be prepended to the uploaded file
 urlpath = "https://rvdm.net/s"
@@ -34,7 +34,7 @@ def copy_file_to_server(source, target):
         print("Something went wrong: %s" % e.output)
         sys.exit(1)
 
-if (len(sys.argv) != 2):
+if len(sys.argv) != 2:
     print("Please run this from Automator with one filename to copy as an argument.")
     sys.exit(1)
 elif (sys.argv[1]):
